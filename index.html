@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QR Code</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        min-height: 100%;
+        margin: 0;
+      }
+
+      body {
+        display: grid;
+        min-height: 100vh;
+        place-items: center;
+        background: #fff;
+      }
+
+      img {
+        display: block;
+        width: min(80vmin, 420px);
+        height: auto;
+        image-rendering: pixelated;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://api.qrserver.com/v1/create-qr-code/?size=600x600&amp;data=https%3A%2F%2Findianatoms.github.io"
+      alt="QR code for https://indianatoms.github.io"
+      width="600"
+      height="600"
+    >
+  </body>
+</html>
